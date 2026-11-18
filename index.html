@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Demo af en hjemmeside til Fest og Gaver i Lystrup. Lavet af OviaSpecs. Ikke butikkens officielle side.">
+<title>Fest og Gaver · Lystrup (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="demo" role="note">Demo · lavet af OviaSpecs til Fest og Gaver – ikke deres officielle side</div>
+<a class="skip" href="#main">Hop til indhold</a>
+<div class="saeson" id="saeson" hidden><span id="saesonTxt"></span></div>
+
+<header class="top">
+  <a class="logo" href="./" aria-label="Fest og Gaver, forside">Fest og <em>Gaver</em></a>
+  <a class="ring" id="ringTop" href="tel:+4522532125">Ring <span class="vh">til butikken</span></a>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="ttl">
+    <div class="hv" aria-hidden="true">FEST</div>
+    <figure class="pol" id="heroPol">
+      <div class="tape" aria-hidden="true"></div>
+      <div class="polimg"><img id="heroImg" src="./assets/fotos/foto-02.webp" width="2048" height="1536" alt="Farverige potteplanter og lys på hvide borde i butikken" fetchpriority="high" decoding="async"></div>
+      <div class="stamp" id="stamp" role="status"><span id="stampTxt">Åbent nu</span></div>
+      <figcaption>Bystævnet 1, Lystrup</figcaption>
+    </figure>
+    <div class="herotx">
+      <h1 id="ttl">Fest<br>og <em>Gaver</em></h1>
+      <p class="lede" id="lede"></p>
+      <div class="acts">
+        <a class="btn red" id="findHero" href="#" rel="noopener" target="_blank">Find vej</a>
+        <a class="btn" id="ringHero" href="#">Ring</a>
+        <a class="btn" id="skrivHero" href="#" rel="noopener" target="_blank">Skriv til os</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mq" aria-hidden="true"><div id="mq">Blomster · brugskunst · specialiteter · <em>fest</em> · gaver · Blomster · brugskunst · specialiteter · <em>fest</em> · gaver · </div></div>
+
+  <section class="fest" id="fest" aria-labelledby="festh">
+    <div class="fv" id="fv" aria-hidden="true">FEST</div>
+    <div class="fin">
+      <p class="k">Til din næste fest</p>
+      <h2 id="festh">Hvad skal der <em>fejres?</em></h2>
+      <div class="chips" id="chips" role="tablist" aria-label="Vælg en anledning"></div>
+      <div class="panel" id="panel" role="tabpanel" aria-live="polite">
+        <div class="pt">
+          <h3 id="pNavn"></h3>
+          <p id="pTekst"></p>
+          <p class="src" id="pKilde"></p>
+          <a class="btn red" id="pCta" href="#" rel="noopener" target="_blank">Skriv til os</a>
+        </div>
+        <div class="pf" id="pFotos"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gal" aria-labelledby="galh">
+    <div class="wrap">
+      <p class="k">I butikken</p>
+      <h2 id="galh">Et lille <em>udsnit</em></h2>
+      <p class="src">Tryk på et billede. Alle billeder er butikkens egne.</p>
+      <div class="collage" id="collage"></div>
+    </div>
+  </section>
+
+  <section class="hjaelp" aria-labelledby="hjh">
+    <div class="wrap">
+      <p class="k">Sådan hjælper vi</p>
+      <h2 id="hjh">Det kan du <em>få</em></h2>
+      <ol class="rows" id="rows"></ol>
+    </div>
+  </section>
+
+  <section class="besoeg" id="besoeg" aria-labelledby="bh">
+    <div class="wrap">
+      <p class="k">Besøg butikken</p>
+      <h2 id="bh">Kig <em>ind</em></h2>
+      <div class="bgrid">
+        <div class="adr"><p class="big" id="adr"></p>
+          <p><a class="btn red" id="findB" href="#" rel="noopener" target="_blank">Find vej</a></p>
+          <p><a class="btn" id="ringB" href="#">Ring <span id="telB"></span></a></p>
+          <p><a class="btn" id="skrivB" href="#" rel="noopener" target="_blank">Skriv til os på Messenger</a></p>
+          <p class="src">Mail: <a id="mailB" href="#"></a> <span class="tbd">[tjek stavning med stedet]</span></p>
+        </div>
+        <div class="hrs">
+          <table><caption class="vh">Åbningstider</caption><tbody id="hrsT"></tbody></table>
+          <p class="src" id="hrsNote"></p>
+          <p class="src"><span class="tbd">[tjek med stedet]</span> Aktuelle åbningstider, levering og forbestilling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="f">
+  <div class="wrap">
+    <p>Demo · lavet af OviaSpecs til Fest og Gaver – ikke deres officielle side. Ingen webshop, ingen betaling.</p>
+    <p>Oplysninger og billeder fra butikkens Facebook-side, hentet 18. november 2026. Det der ikke stod der, er markeret <span class="tbd">[tjek med stedet]</span>.</p>
+    <p><button class="link" id="simbtn" type="button">Demo-tid: rigtigt ur</button></p>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Hurtige handlinger">
+  <a class="d1" id="findDock" href="#" rel="noopener" target="_blank">Find vej</a>
+  <a class="d2" id="skrivDock" href="#" rel="noopener" target="_blank">Skriv til os</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
